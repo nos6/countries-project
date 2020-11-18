@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.headStyle{
+  width: auto;
+  height: 80px;
+  margin:20px;
+  padding-top:16px ;
+  padding-left: 60px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+
+}
+.inputSearch {
+  padding-left: 300px;
+}
+.countryName{
+padding-left: 1rem;
+
+}
+.information{
+ list-style-type: none;
+ text-align: justify;
+ padding-inline-start: 0;
+ padding-left:1rem;
+ margin-bottom: 1rem;
+}
+.information li {
+  line-height: 1.5;
+ 
+}
+
+.container{
+width:80% ;
+ margin: 30px auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.card{
+  width: 230px;
+  margin: 30px ;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+ 
+}
+
+
+.imgSize{
+height: 150px;
+width:100% ;
+object-fit: cover;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, {useState} from "react";
 import './App.css';
+import Countries from "./Countries";
+import countriesAll from "./countriesAll.json";
+import CountrySearchFilter from "./CountrySearchFilter";
+import Heading from "./Heading";
+import BackButton from "./BackButton";
 
 function App() {
+  const [countryData ] = useState(countriesAll)
+  const [displayCountry , setDisplayCountry] = useState(countriesAll)
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Heading />
+     <BackButton />
+     <CountrySearchFilter countryData= {countryData} setDisplayCountry={setDisplayCountry} />
+     <Countries displayCountry={displayCountry}/>
     </div>
   );
 }
